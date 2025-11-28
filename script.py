@@ -17,7 +17,9 @@ def read_csv(paths):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Генерация отчета о сотрудниках")
+    parser = argparse.ArgumentParser(
+        description="Генерация отчета о сотрудниках"
+    )
     parser.add_argument(
         "--files",
         nargs="+",

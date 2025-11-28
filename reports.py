@@ -38,7 +38,11 @@ class PerformanceReport(BaseReport):
 
         showindex = range(1, len(table) + 1)
 
-        return tabulate(table, headers=["position", "performance"], showindex=showindex)
+        return tabulate(
+            table,
+            headers=["position", "performance"],
+            showindex=showindex
+        )
 
 
 REPORTS = {

@@ -50,6 +50,7 @@ local_settings.py
 .idea/
 .vscode/
 
+
 # Typing
 .mypy_cache/
 .dmypy.json
