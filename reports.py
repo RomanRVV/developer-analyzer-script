@@ -39,8 +39,6 @@ class PerformanceReport(BaseReport):
 
         showindex = range(1, len(table) + 1)
 
-        print(table)
-
         return tabulate(
             table,
             headers=["position", "performance"],
