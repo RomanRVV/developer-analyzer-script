@@ -1,9 +1,10 @@
 import argparse
+from argparse import Namespace
 import csv
 from reports import REPORTS
 
 
-def read_csv(paths):
+def read_csv(paths: list) -> list:
     data = []
     for path in paths:
         try:
@@ -16,7 +17,7 @@ def read_csv(paths):
     return data
 
 
-def parse_args():
+def parse_args() -> Namespace:
     parser = argparse.ArgumentParser(
         description="Генерация отчета о сотрудниках"
     )
@@ -35,7 +36,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def main():
+def main() -> None:
     args = parse_args()
 
     report_class = REPORTS[args.report]
