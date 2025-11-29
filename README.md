@@ -22,6 +22,7 @@ poetry install # Установит зависимости из pyproject.toml
 ```sh
 python script.py --files test_data/employees1.csv test_data/employees2.csv --report performance
 ```
+<img width="1990" height="300" alt="скрин" src="https://github.com/user-attachments/assets/2e8f4314-8dbf-4079-9e5f-8a14554849bc" />
 
 ## Добавление нового отчёта:
 
